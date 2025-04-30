@@ -8,10 +8,36 @@
   </head>
     <body>
     <a-scene>
-      <a-sky color="lightblue"></a-sky>
       
+      <a-entity camera look-controls wasd-controls="acceleration: 15" position="0 1.6 0"></a-entity>
+
+      <a-sky color="black" material="flatShading: true; transparent: true; blending: none" geometry=""></a-sky>      
        <!-- Put this inside the <a-scene> -->
-        <a-entity id="cafeteria"ply-model="src: cafeteria.ply" position="0 -29.5 0" rotation="-90 0 90" scale="2 2 2"></a-entity>
-                 </a-scene>
+        <a-sky color="lightblue" material="" geometry=""></a-sky>
+
+        <a-entity id="cafeteria" ply-model="src: cafeteria.ply" position="0 -29.75 0" rotation="-90 0 90" scale="2 2 2"></a-entity>
+       
+        <a-entity id="hallway med-caf-uppereng" ply-model="src: hallway med-caf-uppereng.ply" position="-8 -2.55 0" rotation="-89.99963750135457 90 0" scale="2 2 2"></a-entity>
+
+        <a-entity id="medbay" ply-model="src: medbay.ply" position="-8.4 -1.35 -5.2" rotation="-89.99963750135457 0 0" scale="2 2 2"></a-entity>
+
+        <a-entity id="upper engine" ply-model="src: lower-engine.ply" position="-14.4 -3.35 0" rotation="-90 -90 0" scale="2 2 2"></a-entity>
+
+        <a-entity id="cafeteria windows" ply-model="src: cafeteria-windows.ply" position="-2 -3.75 -1.8" rotation="-90 -90 0" scale="2 2 2" material="opacity: 0.2; shader: flat; transparent: true; color: lightblue"></a-entity> 
+ 
+        <a-entity id="hallway reactor-security" ply-model="src: hallway reactor-uppereng-sec-lowereng.ply" position="-14.2 -1.55 9" rotation="-90 -90 90" scale="2 2 2"></a-entity>
+
+        <a-entity id="security" ply-model="src: security.ply" position="-10.2 -3.35 8.6" rotation="-90.00021045914971 90 0" scale="2 2 2"></a-entity>
+       
+        <a-entity id="reactor" ply-model="src: reactor.ply" position="-20.2 -3.35 9" rotation="-90.00021045914971 180 0" scale="2 2 2"></a-entity>      
+
+        <a-entity id="lower engine" ply-model="src: upper-engine.ply" position="-15.2 -3.75 18" rotation="-89.99963750135457 -90 0" scale="2 2 2"></a-entity>
+      
+        <a-entity id="hallway-electrical" ply-model="src: hallway uppereng-storage (electrical room).ply" position="-7.6 -9.55 19" rotation="-89.99963750135457 -90 0" scale="2 2 2"></a-entity>
+     
+        <a-entity id="storage" ply-model="src: storage.ply" position="2.4 -2.55 19.6" rotation="-89.99963750135457 -90 0" scale="2 2 2" visible=""></a-entity>
+     
+     
+      </a-scene>
   </body>
 </html>
