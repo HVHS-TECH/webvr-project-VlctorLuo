@@ -10,8 +10,14 @@
     <a-scene>
       
       <a-entity camera look-controls wasd-controls="acceleration: 15" position="0 1.6 0"></a-entity>
-      <a-sky src="dtechsky.png" material="" geometry="" animation__animation__position="dir: alternate; from: 0 0 0; loop: 1; to: -330 0 0"></a-sky>      <!--Thanks to https://www.spacespheremaps.com/hdr-spheremaps/ for the image!-->
-
+      <a-sky src="dtechsky.png" 
+      animation="
+      property: postion;
+      from: 0 0 0;
+      to: -330 0 0;
+      dur: 1000;
+      loop: true;
+      dir: alternate;"></a-sky>
 
         <a-entity id="cafeteria" ply-model="src: cafeteria.ply" position="0 -29.75 0" rotation="-90 0 90" scale="2 2 2"></a-entity>
        
