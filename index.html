@@ -119,7 +119,14 @@
         easing: linear;"></a-entity>
 
         <a-entity id="spaceship1" ply-model="src: Spaceship1.ply" position="0 0 0" rotation="" scale="2.01443 2 2" material="opacity: 0.5; shader: flat; transparent: true; color: lightblue"
-        animation=""></a-entity>        
+        animation="
+        property: position;
+        from: 22.341 0.839 -3.949;
+        to: 0.615 0.839 -3.949;
+        loop: true;
+        dir: normal;
+        dur: 500;
+        easing: easeInOutElastic;"></a-entity>        
 
 
 
