@@ -22,7 +22,16 @@
 
         <a-entity id="upper engine" ply-model="src: lower-engine.ply" position="-14.4 -3.35 0" rotation="-90 -90 0" scale="2 2 2"></a-entity>
 
-        <a-entity id="upper actual engine" ply-model="src: engine.ply" position="-14.4 -3.35 0.75" rotation="-90 -90 0" scale="2 2 2"></a-entity>
+        <a-entity id="upper actual engine" ply-model="src: engine.ply" position="-14.4 -3.35 0.75" rotation="-90 -90 0" scale="2 2 2"
+        animation="
+        property: position;
+        from: -14.4 -3.35 0.75;
+        to: 14.589 1.659 -0.873;
+        dur: 2000;
+        loop: true;
+        dir: alternate;
+        easing: linear;"
+        ></a-entity>
 
 
 
