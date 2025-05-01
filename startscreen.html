@@ -29,7 +29,7 @@
       <!-- Camera -->
       <a-camera position="0 1.6 0" cursor="fuse: true; fuseTimeout: 500;"></a-camera>
 
-      <!-- Button Interaction (using A-Frame event system) -->
+      <!-- Button Interaction -->
       <script>
         // Select the start button using its class
         const startButton = document.querySelector('.start-button');
@@ -37,7 +37,7 @@
         // Add event listener for the click event
         startButton.addEventListener('click', function () {
           // Redirect to the game page (index.html)
-          window.location.href = 'index.html';
+          window.location.href = 'index.html';  // This redirects to your game
         });
       </script>
     </a-scene>
