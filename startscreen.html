@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>A-Frame Start Screen</title>
+    <title>Start Screen</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
   </head>
   <body>
@@ -36,6 +36,10 @@
 
         // Add event listener for the click event
         startButton.addEventListener('click', function () {
-          // Here we can trigger a scene transition or change something in the scene.
-          // For now, just display an alert
-          
+          // Redirect to the game page (index.html)
+          window.location.href = 'index.html';
+        });
+      </script>
+    </a-scene>
+  </body>
+</html>
