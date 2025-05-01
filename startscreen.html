@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A-Frame Start Screen</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <button id="startButton">Start</button>
+
+    <a-scene>
+      <a-box position="0 0 0" rotation="0 45 0" color="#440044"></a-box>
+      <a-sphere position="0 1.25 0" radius="1.25" color="#EF29E7"></a-sphere>
+      <a-cylinder position="1 0.5 1" radius="0.5" height="1" color="#78C856"></a-cylinder>
+      <a-plane position="0 0 0" rotation="-90 0 0" width="4" height="4" color="#777777"></a-plane>
+    </a-scene>
+
+    <script>
+      const startButton = document.getElementById('startButton');
+      const scene = document.querySelector('a-scene');
+
+      scene.style.display = 'none'; // Initially hide
+
+      startButton.addEventListener('click', () => {
+        scene.style.display = ''; // Show when button is clicked
+        startButton.style.display = 'none'; // Optionally hide the button
+      });
+    </script>
+  </body>
+</html>
