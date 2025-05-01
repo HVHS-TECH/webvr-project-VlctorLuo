@@ -8,7 +8,8 @@
   </head>
     <body>
     <a-scene>
-      
+          <a-entity id="ambient" geometry="primitive: plane" material="color: blue" position="-10 0 0" sound="src: ambient.mp3; autoplay: true; loop: true; positional: false" loop="true" volume="2"></a-entity>
+
       <a-entity camera look-controls wasd-controls="acceleration: 15" position="0 1.6 0"></a-entity>
       <a-sky src="dtechsky.png" 
       animation="
