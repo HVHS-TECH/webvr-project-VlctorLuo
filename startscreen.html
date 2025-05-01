@@ -7,13 +7,13 @@
   </head>
   <body>
     <a-scene>
-      <!-- Background (you can customize this with a color or an image) -->
+      <!-- Background -->
       <a-sky color="#4CC3D9"></a-sky>
-      
+
       <!-- Title Text -->
       <a-text value="Welcome to the Experience!" position="0 2 -3" color="white" font="https://aframe.io/examples/boilerplate/fonts/mozillavr.fnt"></a-text>
-      
-      <!-- Start Button (a clickable entity) -->
+
+      <!-- Start Button (with hover effect) -->
       <a-box 
         position="0 0 -3" 
         depth="0.5" 
@@ -27,18 +27,15 @@
       </a-box>
 
       <!-- Camera -->
-      <a-camera position="0 1.6 0"></a-camera>
+      <a-camera position="0 1.6 0" cursor="fuse: true; fuseTimeout: 500;"></a-camera>
 
-      <!-- Start Button Interaction -->
+      <!-- Button Interaction (using A-Frame event system) -->
       <script>
-        // Listen for click events on the start button
+        // Select the start button using its class
         const startButton = document.querySelector('.start-button');
-        startButton.addEventListener('click', function() {
-          // Transition to the main scene or action (for example, load a new scene)
-          alert("Game Starting!");
-          // Example: You can load a new scene here with: window.location.href = "game.html";
-        });
-      </script>
-    </a-scene>
-  </body>
-</html>
+
+        // Add event listener for the click event
+        startButton.addEventListener('click', function () {
+          // Here we can trigger a scene transition or change something in the scene.
+          // For now, just display an alert
+          
